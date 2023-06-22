@@ -1,0 +1,282 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #0f0f0f;
+}
+
+::-webkit-scrollbar {
+  width: .5rem;
+  height: .3125rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(165, 164, 164);
+  border-radius: .625rem;
+  height: 6.25rem;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #717171;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0f0f0f;
+}
+
+.category-btn:hover {
+  background-color: #3f3f3f !important;
+  color: white !important;
+}
+
+.category-btn:hover span{
+  color: white !important;
+}
+
+.react-player {
+  height: 77vh !important;
+  width: 100% !important;
+}
+.sign-in{
+  font-size: .875rem;
+}
+.sign-in:hover{
+  border: .0625rem solid #263850 !important;
+  background-color: #263850 !important;
+}
+
+.circle:hover{
+background-color: #303030 !important;
+}
+
+.search-bar{
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 0;
+  border: none;
+  outline:none;
+  padding-left: 0.9rem;
+  background-color: #121212;
+  color: #888888;
+  font-size: .875rem;
+}
+
+.category-btn{
+  font-weight: 400 !important;
+  text-transform: capitalize;
+  font-size: .875rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor:pointer;
+ background-color: #272727;
+  outline: none;
+  border: none;
+  height: 2rem;
+  padding: .4375rem .9375rem;
+  margin: .625rem 0rem;
+  border-radius: .5625rem;
+  transition: all 0.3s ease;
+}
+.side-btn{
+  font-weight: 400 !important;
+  text-transform: capitalize;
+  font-size: .875rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor:pointer;
+  outline: none;
+  border: none;
+  gap: 1.4rem;
+  width: 100%;
+  height: 2.45rem;
+  padding: .4375rem .98rem;
+  border-radius: .625rem;
+  transition: all 0.3s ease;
+}
+.slim-btn{
+  font-weight: 400 !important;
+  text-transform: capitalize;
+  display: flex;
+  font-size: .625rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+  outline: none;
+  border: none;
+  gap: 0.45rem;
+  width: 100%;
+  height: 4.8rem;
+  padding: 1.5rem 2rem;
+  border-radius: .625rem;
+  transition: all 0.3s ease;
+}
+.short-heading{
+  font-size: .875rem;
+  color: #FFFFFF;
+  margin-left: .9rem;
+  padding-top: .3rem;
+  padding-bottom: .4rem;
+}
+.end-heading{
+  font-size: .75rem;
+  color: lightgrey;
+  margin-left: .9rem;
+  padding-top: .2rem;
+  padding-bottom: .35rem;
+}
+.copyright{
+  font-size: .75rem;
+  color: #717171;
+  margin-left: .9rem;
+  padding-top: .2rem;
+  padding-bottom: .35rem;
+}
+
+.more{
+  display: 'flex';
+  flex-direction: column;
+  position: absolute;
+  z-index: 15;
+  top: 3.5rem;
+  right: 10rem;
+  color: white;
+  width: 17.5rem;
+  height: 27.5rem;
+  border-radius: 0.9rem;
+  background-color: #282828;
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.span-more{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: inherit;
+  padding: 0.4rem;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+.div-more{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.close{
+  position: absolute;
+   z-index: 11;
+    top: 0.5rem;
+    right: 12%
+}
+
+.span-more:hover{
+  background-color: #3e3e3e;
+}
+
+.div-more:hover{
+  background-color: #3e3e3e;
+}
+
+.side-btn:hover{
+    background-color: #272727 !important;
+}
+.slim-btn:hover{
+    background-color: #272727 !important;
+}
+
+.more-icon{
+  display: 'none';
+}
+
+/* 
+@media screen and (max-width: 900px) {
+  .category-btn{
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width:800px){
+  .copyright{
+    display:none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-horizontal {
+    overflow: auto !important;
+  }
+
+  .react-player {
+    height: 45vh !important;
+  }
+  .search-bar{
+    width:50px;
+  }
+} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html{
+    font-size: 35%;
+  } 
+  .search-bar{
+    width: 15.25rem;
+  }
+
+  .close{
+    right: 20%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html{
+    font-size: 65%;
+  }
+
+  .search-bar{
+    width: 30.25rem ;
+  }
+
+  
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html{
+    font-size: 75%;
+  } 
+ 
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html{
+    font-size: 80%;
+  }
+  .search-bar{
+    width: 32.25rem ;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html{
+    font-size: 100%;
+  }
+
+}
