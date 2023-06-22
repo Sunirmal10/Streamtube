@@ -10,7 +10,7 @@ const Videos = ({ videos, direction }) => {
  
 
   return (
-    <Stack direction={direction || "row"} flexWrap="wrap" justifyContent="center" gap={'0.01rem'}>
+    <Stack direction={direction || "row"} flexWrap="wrap" justifyContent="center" gap={'0.5rem'}>
 
       {
         videos.map((item,idx)=>(

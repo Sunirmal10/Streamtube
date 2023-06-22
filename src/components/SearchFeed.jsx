@@ -32,7 +32,7 @@ const SearchFeed = () => {
     >
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{searchTerm `- YouTube Clone`}</title>
+        <title>{`${searchTerm} - YouTube Clone`}</title>
       </Helmet>
       <Typography
         variant="h5"
