@@ -1,4 +1,4 @@
-# YouTube Clone
+# YouTube Streaming App
 
 ## Description
 This project is a YouTube clone that replicates the modern UI/UX design of YouTube. It utilizes the Rapid API YouTube V3 API for fetching and displaying video data. The clone consists of multiple pages, including an individual video playback page with similar suggested videos, an individual channel page, and a search feed page. The application also includes a search feature to query for specific videos.
