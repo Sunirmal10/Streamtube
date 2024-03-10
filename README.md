@@ -27,13 +27,13 @@ https://youtubeclonegen.netlify.app
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/youtube-clone.git
+   git clone <repository_url>
    ```
 
 2. Navigate to the project directory:
 
     ```sh
-    cd youtubec
+    cd folder_name
     ```
 
 3. Install the dependencies:
