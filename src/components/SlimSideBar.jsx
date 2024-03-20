@@ -12,7 +12,7 @@ const SlimSideBar = () => {
 
   return (
     <Stack
-    direction={'column'} sx={{ display: showSlim ? 'block' : 'none', px:'0.25rem', color: '#000000', zIndex: '10', backgroundColor: '#0f0f0f', pr: '.5rem', position:'fixed', width: '3.5rem', height:'90vh', left: '0'
+    direction={'column'} sx={{ display: showSlim ? 'block' : 'none', px:'0.25rem', color: '#000000', zIndex: '10', backgroundColor: '#0f0f0f', pr: '0.7rem', position:'fixed', width: '3.5rem', height:'90vh', left: '0'
      }}
     >
       <Stack>
