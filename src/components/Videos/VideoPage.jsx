@@ -1,5 +1,5 @@
 import { ThumbDownAltSharp, ThumbUpAltSharp } from '@mui/icons-material';
-import { Typography, Box, Stack, IconButton } from '@mui/material';
+import { Typography, Box, Stack, IconButton, CardMedia } from '@mui/material';
 import React, {useState, useEffect, useContext} from 'react';
 import ReactPlayer from 'react-player';
 import {Link, useParams} from 'react-router-dom';
@@ -42,7 +42,7 @@ const VideoPage = () => {
     <Box minHeight={'95vh'}  sx={{ ml: margin ? '14rem' : '3.5rem'}}>
          <Helmet>
                 <meta charSet="utf-8" />
-                <title> {`${videoDetail?.snippet?.title}- YouTube Clone`}</title>
+                <title> {`${videoDetail?.snippet?.title}- StreamTube`}</title>
             </Helmet>
       <Stack direction={{xs: 'column', sm: 'row'}} sx={{gap: '0.5rem'}}
   
@@ -62,14 +62,21 @@ const VideoPage = () => {
             color: "white"
           }} py={1} px={2}>
             <Stack direction={'row'} alignItems={'center'} gap={'0.5rem'}>
-            <div
-            style={{
-              width: "2.5rem",
-              height: "2.5rem",
-              borderRadius: "50%",
-              backgroundColor: "red"
-            }}
-            ></div>
+            <CardMedia
+                backgroundColor="transparent"
+                image='/images/logocircle.png'
+            
+               sx={{borderRadius: '50%',
+                   height: '2.5rem',
+                   width: '2.5rem',
+                   display: 'flex',
+                   justifyContent: 'center',
+                   alignItems: 'center',
+                   marginTop: '0.18rem',
+                   
+             }
+             }
+               ></CardMedia>
             <Link to={`/channel/${videoDetail?.snippet?.channelId}`}>
             <Typography variant={{sm: 'subtitle1', md: 'h6'}} sx={{fontFamily: 'Roboto'}} color='white'>
               {videoDetail?.snippet?.channelTitle}

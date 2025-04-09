@@ -35,7 +35,7 @@ const ChannelPage = () => {
 
 <Helmet>
                 <meta charSet="utf-8" />
-                <title>{`${channelDetail?.snippet?.title} - YouTube Clone`}</title>
+                <title>{`${channelDetail?.snippet?.title} - StreamTube`}</title>
             </Helmet>
 
       <Box

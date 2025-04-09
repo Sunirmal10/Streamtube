@@ -25,7 +25,7 @@ const Feed = () => {
 
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>YouTube Clone</title>
+                <title>StreamTube</title>
             </Helmet>
 
       <Box>

@@ -37,6 +37,7 @@ return (  <Stack
   left: 0,
   right: 0,
   zIndex: 10,
+  width: '100%',
   justifyContent: 'space-between'}}>
 
 
@@ -54,14 +55,14 @@ return (  <Stack
       width: "0.8rem",
       left: "0.5rem"
     }}></div>
-    <BsYoutube style={{color:'red', fontSize: '1.875rem', marginTop: '.28rem', zIndex:"1"}}/>
+    <BsYoutube style={{color:'deepskyblue', fontSize: '1.875rem', marginTop: '.28rem', zIndex:"1"}}/>
     
    
     {/* <img src={logo} alt='YouTube' height={45}/> */}
     <Typography sx={{display:'flex', justifyContent: 'center', alignItems: 'center', color: 'white', fontSize: '1.25rem', fontWeight: '500',
     
      fontFamily: 'Oswald', letterSpacing: '-0.025rem'}}>
-      YouTube
+      StreamTube
     </Typography>
     </Link>
     </Box>

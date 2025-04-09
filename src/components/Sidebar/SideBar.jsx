@@ -125,7 +125,7 @@ const SideBar = () => {
         direction={"column"}
         sx={{ alignItems: "start", fontFamily:'Roboto', px: ".25rem", py: '0.7rem', borderBottom: '.0625rem solid grey'}}
       >
-        <span className="short-heading">More from YouTube</span>
+        <span className="short-heading">More from StreamTube</span>
         {list5.map((cat) => (
           <button 
            className="side-btn"           
@@ -176,7 +176,7 @@ const SideBar = () => {
           </span>
         ))
        }
-        <span className="copyright">© {getDate()} Google LLC</span>
+        <span className="copyright">© {getDate()} StreamTube</span>
       </Stack>
     </Stack>
   )

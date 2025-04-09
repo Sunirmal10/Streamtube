@@ -56,9 +56,9 @@ export const list4 = [
   { name: 'Fashion & Beauty', icon: <CheckroomOutlined />, },
 ];
 export const list5 = [
-  { name: 'YouTube Premium', icon: <Si.SiYoutube style={{color:'red'}}/>, },
-  { name: 'YouTube Music', icon: <Si.SiYoutubemusic style={{color:'red'}}/>, },
-  { name: 'YouTube Kids', icon: <TbBrandYoutube style={{color:'red'}} />, },
+  { name: 'StreamTube Premium', icon: <Si.SiYoutube style={{color:'skyblue'}}/>, },
+  { name: 'StreamTube Music', icon: <Si.SiYoutubemusic style={{color:'skyblue'}}/>, },
+  { name: 'StreamTube Kids', icon: <TbBrandYoutube style={{color:'skyblue'}} />, },
 ];
 export const list6 = [
   { name: 'Settings', icon: <SettingsOutlined />, },
@@ -67,7 +67,7 @@ export const list6 = [
   { name: 'Send feedback', icon: <FeedbackOutlined />, },
 ];
 export const list7 = [
-  { name: 'Your Data in Youtube', icon: <VerifiedUserOutlined />, },
+  { name: 'Your Data in StreamTube', icon: <VerifiedUserOutlined />, },
 ];
 export const list8 = [
   { name: 'Appearance: Dark',icon2: <KeyboardArrowRightOutlined/>, icon: <Brightness2Outlined />, },
@@ -88,8 +88,8 @@ export const list10 = [
 export const demoThumbnailUrl = 'https://assets.turbologo.com/blog/en/2019/10/19084944/youtube-logo-illustration-958x575.jpg';
 export const demoChannelUrl = '/channel/UC_0MucSdwSqy8rJkSZpQ1kw';
 export const demoVideoUrl = '/video/HVxO5K7o9ww';
-export const demoChannelTitle = 'YouTube India Channel';
-export const demoVideoTitle = 'Welcome to YouTube India Channel';
+export const demoChannelTitle = 'StreamTube India Channel';
+export const demoVideoTitle = 'Welcome to StreamTube India Channel';
 export const demoProfilePicture = 'https://cdn.pixabay.com/photo/2016/04/24/14/34/youtube-1349699_1280.png'
 
 export const footNotes = [
@@ -98,7 +98,7 @@ export const footNotes = [
   { term1: "Advertise", term2: "Developers" },
   { term1: <br /> }, // Represents the line break
   { term1: "Terms", term2: "Privacy Policy & Safety"},
-  { term1: "How Youtube works" },
+  { term1: "How StreamTube works" },
   { term1: "Test new features" },
   { term1: <br /> },
 ]
