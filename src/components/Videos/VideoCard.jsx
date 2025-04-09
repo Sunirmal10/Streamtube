@@ -23,7 +23,7 @@ const VideoCard = ({video: {id: {videoId}, snippet}}) => {
     }, [videoId])
 
   return (
-    <Card variant='plain' sx={{display: 'flex', flexDirection: {xs: 'row', sm: 'column'}, alignItems: 'center', justifyContent: 'center', width: {md: '22rem', xs: '100%' }, height:'19rem', border: 'none', borderRadius:'0.9rem', backgroundColor: 'transparent'}}>
+    <Card variant='plain' sx={{display: 'flex', flexDirection: {xs: 'row', sm: 'column'}, alignItems: 'center', justifyContent: 'center', width: {md: '22rem', xs: '100%' }, height:'20rem', border: 'none', borderRadius:'0.9rem', backgroundColor: 'transparent'}}>
         <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
             <CardMedia 
             image={snippet?.thumbnails?.high?.url}
