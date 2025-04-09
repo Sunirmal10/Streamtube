@@ -1,11 +1,13 @@
 import React from 'react'
 import {Stack, Box} from '@mui/material';
 import VideoCard from './VideoCard';
-import ChannelCard from './ChannelCard';
+import { FaSpinner } from "react-icons/fa";
+import ChannelCard from '../Channel/ChannelCard';
 
-const Videos = ({ videos, direction }) => {
+const Videos = ({ videos, direction, selectedCategory }) => {
 
-  if (!videos?.length) return "Loading...";
+  if (!videos?.length) return
+  <FaSpinner className='spinner' />;
 
  
 
@@ -15,7 +17,7 @@ const Videos = ({ videos, direction }) => {
       {
         videos.map((item,idx)=>(
           <Box key={idx}>
-            {item.id.channelId && <ChannelCard channelDetail={item}/>}      
+            {/* {item.id.channelId && <ChannelCard channelDetail={item}/>}   */}
             {item.id.videoId && <VideoCard video={item}/>}      
           </Box>
         ))

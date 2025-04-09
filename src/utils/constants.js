@@ -91,3 +91,14 @@ export const demoVideoUrl = '/video/HVxO5K7o9ww';
 export const demoChannelTitle = 'YouTube India Channel';
 export const demoVideoTitle = 'Welcome to YouTube India Channel';
 export const demoProfilePicture = 'https://cdn.pixabay.com/photo/2016/04/24/14/34/youtube-1349699_1280.png'
+
+export const footNotes = [
+  { term1: "About", term2: "Press", term3: "Copyright" },
+  { term1: "Contact us", term2: "Creators" },
+  { term1: "Advertise", term2: "Developers" },
+  { term1: <br /> }, // Represents the line break
+  { term1: "Terms", term2: "Privacy Policy & Safety"},
+  { term1: "How Youtube works" },
+  { term1: "Test new features" },
+  { term1: <br /> },
+]

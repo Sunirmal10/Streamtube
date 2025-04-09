@@ -1,14 +1,14 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {Box, Stack} from '@mui/material';
 import './App.css';
-import Navbar from './components/Navbar';
-import Feed from './components/Feed';
-import VideoDetail from './components/VideoDetail';
-import SearchFeed from './components/SearchFeed';
-import ChannelDetail from './components/ChannelDetail';
-import SideBar from './components/SideBar';
-import SlimSideBar from './components/SlimSideBar';
-import { VidProvider } from './components/VidContext';
+import Navbar from './components/Navbar/Navbar';
+import Feed from './components/Feed/Feed';
+import VideoPage from './components/Videos/VideoPage';
+import SearchFeed from './components/Feed/SearchFeed';
+import ChannelPage from './components/Channel/ChannelPage';
+import SideBar from './components/Sidebar/SideBar';
+import SlimSideBar from './components/Sidebar/SlimSideBar';
+import { VidProvider } from './components/Context/VidContext';
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
       <SlimSideBar/>
      <Routes>
         <Route path="/" exact element={<Feed/>} />
-        <Route path="/video/:id" element={<VideoDetail/>} />
-        <Route path="/channel/:id" element={<ChannelDetail/>} />
+        <Route path="/video/:id" element={<VideoPage/>} />
+        <Route path="/channel/:id" element={<ChannelPage/>} />
         <Route path="/search/:searchTerm" element={<SearchFeed/>} />
       </Routes>
      </Stack>

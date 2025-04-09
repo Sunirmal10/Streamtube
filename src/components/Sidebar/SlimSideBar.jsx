@@ -1,7 +1,7 @@
 import { Stack } from '@mui/material'
 import React, { useState, useContext } from "react";
-import { list3 } from '../utils/constants'
-import { VidContext } from "./VidContext";
+import { list3 } from '../../utils/constants'
+import { VidContext } from "../Context/VidContext";
 import { useNavigate } from 'react-router-dom';
 
 const SlimSideBar = () => {

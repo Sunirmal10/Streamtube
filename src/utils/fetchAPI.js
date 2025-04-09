@@ -6,7 +6,7 @@ const options = {
  
   url: BASE_URL,
   params: {
-    maxResults: '50'
+    maxResults: '48'
   },
   headers: {
     'X-RapidAPI-Key': '917cc99e34msh9ded5bd7cccbd54p1c33a9jsnb6fd482fc801 ',
@@ -17,6 +17,6 @@ const options = {
 export const fetchAPI = async (url) => {
   const {data} = await axios.get(`${BASE_URL}/${url}`,
   options);
-  console.log(data);
+  console.log(data.items, "data");
   return data;
 };

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { IconButton, Stack } from "@mui/material";
-import { categories } from "../utils/constants";
+import { categories } from "../../utils/constants";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 

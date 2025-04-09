@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Box, Typography } from "@mui/material";
-import Videos from "./Videos";
-import { fetchAPI } from "../utils/fetchAPI";
+import Videos from "../Videos/Videos";
+import { fetchAPI } from "../../utils/fetchAPI";
 import { useParams } from "react-router-dom";
-import { VidContext } from "./VidContext";
+import { VidContext } from "../Context/VidContext";
 import { Helmet } from "react-helmet";
 
 const SearchFeed = () => {

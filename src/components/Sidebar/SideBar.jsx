@@ -1,7 +1,7 @@
 import { IconButton, Stack } from "@mui/material";
 import React, { useContext } from "react";
-import { VidContext } from "./VidContext";
-import { list,list2, list4, list5, list6 } from "../utils/constants";
+import { VidContext } from "../Context/VidContext";
+import { footNotes, list,list2, list4, list5, list6 } from "../../utils/constants";
 import { AccountCircleOutlined, AddCircleOutlineOutlined } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 
@@ -12,12 +12,18 @@ const SideBar = () => {
   
   const navigate = useNavigate();
 
+  const getDate = ()=> {
+    const date = new Date();
+     const year = date.getFullYear()
+     return year
+  }
+
   return (
-    <Stack direction={'column'} sx={{color: '#000000', zIndex: '10', backgroundColor: '#0f0f0f', pr: '.5rem', pb:'0.5rem', position:'fixed', width: '14rem', overflow: 'auto', height: '90%', left: moveLeft ? '-14rem' : '0'
+    <Stack direction={'column'} sx={{color: '#000000', zIndex: '10', backgroundColor: '#0f0f0f', pr: '.5rem', mr: '.5rem', pb:'0.5rem', position:'fixed', width: '14rem', overflow: 'auto', height: '90%', left: moveLeft ? '-14rem' : '0'
      }}>
      <Stack
         direction={"column"}
-        sx={{ alignItems: "center", px: ".3rem", py: '0.6rem', borderBottom: '.0625rem solid grey'}}
+        sx={{ alignItems: "center", px: ".3rem", py: '0.6rem', borderBottom: '.0625rem solid grey', gap: '0.2rem'}}
       >
         {list.map((cat) => (
           <button 
@@ -25,7 +31,7 @@ const SideBar = () => {
            onClick={() => 
             {
               navigate('/')
-            setSelectedCategory(cat.name)
+            cat.name !== "Subscriptions" && setSelectedCategory(cat.name)
           }}
            style={
              cat.name === selectedCategory
@@ -157,15 +163,20 @@ const SideBar = () => {
         sx={{ alignItems: "start", fontFamily: 'Roboto' , fontSize: 'small', fontWeight: '500'
         , px: ".25rem", py: '0.7rem'}}
       >
-        <span className="end-heading">About Press Copyright</span>
-        <span className="end-heading">Contact us Creators</span>
-        <span className="end-heading">Advertise Developers</span>
-        <br />
-        <span className="end-heading">Terms Privacy Policy & Safety</span>
-        <span className="end-heading">How Youtube works</span>
-        <span className="end-heading">Test new features</span>
-        <br />
-        <span className="copyright">© 2023 Google LLC</span>
+       
+       {
+        footNotes.map((item, i)=>(
+          <span
+          className="end-heading"
+          key={i}
+          >
+          <span>{item.term1}</span>
+          <span>{item.term2}</span>
+          <span>{item.term3}</span>
+          </span>
+        ))
+       }
+        <span className="copyright">© {getDate()} Google LLC</span>
       </Stack>
     </Stack>
   )

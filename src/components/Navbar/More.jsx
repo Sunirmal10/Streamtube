@@ -1,7 +1,7 @@
 import { Stack } from '@mui/material'
 import React, { useContext } from 'react'
-import { list10, list7, list8, list9 } from '../utils/constants'
-import { VidContext } from './VidContext'
+import { list10, list7, list8, list9 } from '../../utils/constants'
+import { VidContext } from '../Context/VidContext'
 
 const More = () => {
 

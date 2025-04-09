@@ -1,14 +1,14 @@
 import React, {useContext} from 'react'
 import {Box, IconButton, Stack, Typography} from '@mui/material';
 import { Link } from 'react-router-dom';
-import { logo } from '../utils/constants';
-import SearchBar from './SearchBar';
+import { logo } from '../../utils/constants';
+import SearchBar from '../Searchbar/SearchBar';
 import MenuIcon from '@mui/icons-material/Menu';
 import { AccountCircleOutlined, KeyboardVoiceRounded, MoreVertOutlined } from '@mui/icons-material';
 import { BsYoutube } from "react-icons/bs";
 import { FiMenu } from "react-icons/fi";
-import { VidContext } from "./VidContext";
-import More from './More';
+import { VidContext } from "../Context/VidContext";
+import More from './/More';
 
 
 const Navbar = () => {
@@ -45,8 +45,18 @@ return (  <Stack
       <MenuIcon/>
     </IconButton>
 
-    <Link to="/" style={{display: 'flex', alignItems: 'center', gap: '.1875rem', marginBottom: '.625rem'}}>
-      <BsYoutube style={{color:'red', fontSize: '1.875rem', marginTop: '.1875rem'}}/>
+    <Link to="/" style={{display: 'flex', alignItems: 'center', gap: '.1875rem', marginBottom: '.625rem', position: "relative"}}>
+    <div style={{
+      backgroundColor: 'white',
+      padding: 0,
+      position: "absolute",
+      height: "1rem",
+      width: "0.8rem",
+      left: "0.5rem"
+    }}></div>
+    <BsYoutube style={{color:'red', fontSize: '1.875rem', marginTop: '.28rem', zIndex:"1"}}/>
+    
+   
     {/* <img src={logo} alt='YouTube' height={45}/> */}
     <Typography sx={{display:'flex', justifyContent: 'center', alignItems: 'center', color: 'white', fontSize: '1.25rem', fontWeight: '500',
     

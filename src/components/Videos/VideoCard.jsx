@@ -1,18 +1,29 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { Typography, Card, CardContent, CardMedia, Box, IconButton } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
-import { demoVideoUrl, demoVideoTitle, demoChannelUrl, demoChannelTitle } from '../utils/constants';
-import { randomColor } from './Functions';
-import { VidContext } from './VidContext';
+import { demoVideoUrl, demoVideoTitle, demoChannelUrl, demoChannelTitle } from '../../utils/constants';
+import { VidContext } from '../Context/VidContext';
+
 
 
 const VideoCard = ({video: {id: {videoId}, snippet}}) => {
 
-    const {margin} = useContext(VidContext)
+    const {selectedCategory, getTimeAgo } = useContext(VidContext);
+
+    function generateRandomNumber() {
+        return Math.floor(Math.random() * 999) + 1;
+      }
+
+    useEffect(() => {
+       
+
+          generateRandomNumber()
+          
+    }, [videoId])
 
   return (
-    <Card variant='plain' sx={{width: {md: '22.5rem', xs: '100%' }, height:'21rem', border: 'none', borderRadius:'0.85rem', backgroundColor: 'inherit'}}>
+    <Card variant='plain' sx={{width: {md: '22rem', xs: '100%' }, height:'19rem', border: 'none', borderRadius:'0.9rem', backgroundColor: 'inherit'}}>
         <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
             <CardMedia 
             image={snippet?.thumbnails?.high?.url}
@@ -25,18 +36,21 @@ const VideoCard = ({video: {id: {videoId}, snippet}}) => {
             }}>
             <Box >
             <Link to={snippet?.channelId ? `/channel/${snippet?.channelId}` : demoChannelUrl}>
-               <Box
-                backgroundColor={randomColor}
+               <CardMedia
+                backgroundColor="transparent"
+                image='/images/logocircle.png'
+            
                sx={{borderRadius: '50%',
-                   height: '2.4rem',
-                   width: '2.4rem',
+                   height: '2.5rem',
+                   width: '2.5rem',
                    display: 'flex',
                    justifyContent: 'center',
                    alignItems: 'center',
-                   opacity: '0.3',
+                   marginTop: '0.18rem',
                    
-             }}
-               ></Box>
+             }
+             }
+               ></CardMedia>
             </Link>
             </Box>
             
@@ -44,20 +58,30 @@ const VideoCard = ({video: {id: {videoId}, snippet}}) => {
             <Link style={{display: 'flex', width: '15.5rem', flexWrap: 'wrap',
             }} to={videoId ? `/video/${videoId}` : demoVideoUrl}>
                 <Typography variant='subtitle1' color={`#FFFFFF`}>
-                    {snippet?.title.slice(0,55) || demoVideoTitle.slice(0,55)}
+                    {snippet?.title.slice(0,45) || demoVideoTitle.slice(0,45)}
                 </Typography>
             </Link>
             
             <Link to={snippet?.channelId ? `/channel/${snippet?.channelId}` : demoChannelUrl}>
-                <Typography variant='subtitle2' color={`grey`} sx={{display: 'flex', flexWrap:'wrap', alignItems: 'center'}}>
-                    <span style={{display: 'flex', alignItems: 'center'}}>{snippet?.channelTitle || demoChannelTitle}
-                    <CheckCircle sx={{fontSize: '.9375rem', color: 'grey', ml: '0.315rem'}}/></span>  
+                <Typography variant='subtitle2' color={`grey`} sx={{display: 'flex', flexWrap:'wrap', alignItems: 'center',
+                    '&:hover': {
+          color: '#d6d2d2',
+          cursor: 'pointer', 
+        },
+                }}>
+                    <span style={{display: 'flex', alignItems: 'center',
+                  
+                    }}>{snippet?.channelTitle || demoChannelTitle}
+                    <CheckCircle sx={{fontSize: '.9375rem', color: 'grey', ml: '0.315rem', mb: '0.2rem'}}/></span>  
                 </Typography>
             </Link>
             <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
             <Typography variant='subtitle2' color={`grey`} sx={{display: 'flex', alignItems: 'center'}}>
-                   123K views • 10 hours ago
+                   { selectedCategory === "Live" ? generateRandomNumber()+"K watching" :
                    
+                        generateRandomNumber()+"K views  •  " + getTimeAgo(snippet?.publishTime)
+                   
+                   }
                 </Typography>
             </Link>
             

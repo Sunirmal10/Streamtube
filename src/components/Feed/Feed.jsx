@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import TopicBar from "./TopicBar";
-import Videos from "./Videos";
-import { fetchAPI } from "../utils/fetchAPI";
-import { VidContext } from "./VidContext";
+import TopicBar from "../Topicbar/TopicBar";
+import Videos from "../Videos/Videos";
+import { fetchAPI } from "../../utils/fetchAPI";
+import { VidContext } from "../Context/VidContext";
 import {Helmet} from "react-helmet";
 
 const Feed = () => {
@@ -21,7 +21,7 @@ const Feed = () => {
   }, [selectedCategory]);
 
   return (
-    <Stack sx={{ overflow: 'hidden', width: margin ? '84%' : '100%', flexDirection: "column",px: '1rem', ml: margin ? '14rem' : '3.5rem'}}>
+    <Stack sx={{ overflow: 'hidden', width: margin ? '84%' : '100%', flexDirection: "column",px: '1rem', ml: margin ? '14rem' : '3.5rem', }}>
 
             <Helmet>
                 <meta charSet="utf-8" />
