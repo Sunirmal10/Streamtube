@@ -1,4 +1,4 @@
-import { CheckCircle, ThumbDownAltSharp, ThumbUpAltSharp, ThumbUpSharp } from '@mui/icons-material';
+import { ThumbDownAltSharp, ThumbUpAltSharp } from '@mui/icons-material';
 import { Typography, Box, Stack, IconButton } from '@mui/material';
 import React, {useState, useEffect, useContext} from 'react';
 import ReactPlayer from 'react-player';
@@ -84,12 +84,12 @@ const VideoPage = () => {
 
             </Stack>
            
-            <span 
-            // direction={'row'} 
-            // gap={"0"} 
-            // alignItems={'center'}
+            <div 
             style={{
-              marginRight: '-1rem'
+              display: 'flex',
+              padding: 0,
+              marginRight: '-1rem',
+              gap: "0"
             }}
             >
          
@@ -126,7 +126,7 @@ const VideoPage = () => {
                 </button>
              
         
-            </span>
+            </div>
 
       
           </Stack>
@@ -195,13 +195,11 @@ const VideoPage = () => {
                
       </Box>
       {/* suggested/recommended videos box */}
-      <Box px={2} py={{md: 1, xs: 5}} justifyContent={'center'} alignItems={'center'} 
-      sx={{
-        // backgroundColor: "red",
-        // scale: "0.8",
-        // marginTop: "-35.5rem"
-      }}      
+      <Box px={2} py={{md: 1, xs: 2}} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}       
       >
+        <div
+        className='recommended'
+        >Suggested for you</div>
         
           <Videos videos={videos} direction="column"
           />

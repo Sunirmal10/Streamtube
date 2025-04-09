@@ -1,11 +1,11 @@
-import { Stack } from '@mui/material'
+
 import React, { useContext } from 'react'
 import { list10, list7, list8, list9 } from '../../utils/constants'
 import { VidContext } from '../Context/VidContext'
 
 const More = () => {
 
-    const {more, moreRef} = useContext(VidContext);
+    const {moreRef} = useContext(VidContext);
 
   return (
     <div className='more' style={{fontFamily: 'Roboto'}} ref={moreRef}>

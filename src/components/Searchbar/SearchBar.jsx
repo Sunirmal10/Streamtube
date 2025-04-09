@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Paper, IconButton} from '@mui/material';
-import { Search, Close } from '@mui/icons-material';
 import { IoIosSearch,IoMdClose } from "react-icons/io";
 
 const SearchBar = () => {

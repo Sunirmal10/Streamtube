@@ -1,6 +1,6 @@
 import React, {useContext, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import { Typography, Card, CardContent, CardMedia, Box, IconButton } from '@mui/material';
+import { Typography, Card, CardContent, CardMedia, Box } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 import { demoVideoUrl, demoVideoTitle, demoChannelUrl, demoChannelTitle } from '../../utils/constants';
 import { VidContext } from '../Context/VidContext';
@@ -23,7 +23,7 @@ const VideoCard = ({video: {id: {videoId}, snippet}}) => {
     }, [videoId])
 
   return (
-    <Card variant='plain' sx={{width: {md: '22rem', xs: '100%' }, height:'19rem', border: 'none', borderRadius:'0.9rem', backgroundColor: 'inherit'}}>
+    <Card variant='plain' sx={{display: 'flex', flexDirection: {xs: 'row', sm: 'column'}, alignItems: 'center', justifyContent: 'center', width: {md: '22rem', xs: '100%' }, height:'19rem', border: 'none', borderRadius:'0.9rem', backgroundColor: 'transparent'}}>
         <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
             <CardMedia 
             image={snippet?.thumbnails?.high?.url}

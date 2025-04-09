@@ -1,12 +1,12 @@
 import React, {useContext} from 'react'
 import {Box, IconButton, Stack, Typography} from '@mui/material';
 import { Link } from 'react-router-dom';
-import { logo } from '../../utils/constants';
+
 import SearchBar from '../Searchbar/SearchBar';
 import MenuIcon from '@mui/icons-material/Menu';
 import { AccountCircleOutlined, KeyboardVoiceRounded, MoreVertOutlined } from '@mui/icons-material';
 import { BsYoutube } from "react-icons/bs";
-import { FiMenu } from "react-icons/fi";
+
 import { VidContext } from "../Context/VidContext";
 import More from './/More';
 

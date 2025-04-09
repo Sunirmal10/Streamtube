@@ -1,7 +1,7 @@
 import * as Si from 'react-icons/si';
 import {TbBrandYoutube} from 'react-icons/tb';
 
-import { AdminPanelSettingsOutlined, Brightness2Outlined, CellTowerOutlined, CheckroomOutlined, EmojiEventsOutlined, FeedOutlined, FeedbackOutlined, FlagOutlined, HelpOutlined, HistoryOutlined, Home, HomeMini, KeyboardAltOutlined, KeyboardArrowRightOutlined, LanguageOutlined, LightbulbOutlined, LocalMallOutlined, MovieOutlined, MusicNoteOutlined, SettingsOutlined, SmartDisplayOutlined, SportsEsportsOutlined, SubscriptionsOutlined, TranslateOutlined, VerifiedUserOutlined, VideoLibraryOutlined, WhatshotOutlined } from '@mui/icons-material';
+import { AdminPanelSettingsOutlined, Brightness2Outlined, CellTowerOutlined, CheckroomOutlined, EmojiEventsOutlined, FeedOutlined, FeedbackOutlined, FlagOutlined, HelpOutlined, HistoryOutlined, Home, KeyboardAltOutlined, KeyboardArrowRightOutlined, LanguageOutlined, LightbulbOutlined, LocalMallOutlined, MovieOutlined, MusicNoteOutlined, SettingsOutlined, SmartDisplayOutlined, SportsEsportsOutlined, SubscriptionsOutlined, TranslateOutlined, VerifiedUserOutlined, VideoLibraryOutlined, WhatshotOutlined } from '@mui/icons-material';
 
 export const logo = 'images/logoyt.png';
 

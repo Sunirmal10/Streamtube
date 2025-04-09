@@ -2,7 +2,7 @@ import React from 'react'
 import {Stack, Box} from '@mui/material';
 import VideoCard from './VideoCard';
 import { FaSpinner } from "react-icons/fa";
-import ChannelCard from '../Channel/ChannelCard';
+
 
 const Videos = ({ videos, direction, selectedCategory }) => {
 

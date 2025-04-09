@@ -1,5 +1,5 @@
 import { Stack } from '@mui/material'
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { list3 } from '../../utils/constants'
 import { VidContext } from "../Context/VidContext";
 import { useNavigate } from 'react-router-dom';
@@ -8,7 +8,7 @@ const SlimSideBar = () => {
 
   const navigate = useNavigate();
 
-  const {showSlim, setSelectedCategory, selectedCategory} = useContext(VidContext)
+  const {showSlim, setSelectedCategory} = useContext(VidContext)
 
   return (
     <Stack
