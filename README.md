@@ -9,7 +9,7 @@ Streamtube is a modern video-streaming web app built with React and Material UI.
 ## ✨ Features
 
 - 🎨 **Modern Responsive UI/UX Design**
-  - Inspired by YouTube's clean and responsive interface for an intuitive user experience.
+  - Modern and responsive interface for an intuitive user experience.
 
 - 🔌 **Rapid API Integration**
   - Uses **YouTube V3 API** via **RapidAPI** to fetch real-time video data.
