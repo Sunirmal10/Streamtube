@@ -64,7 +64,7 @@ Streamtube is a modern video-streaming web app built with React and Material UI.
     npm start
     ```
 
-2. Open your browser and visit http://localhost:3000 to access Streamtube.
+2. Open your browser and visit http://localhost:3000 or your respective port to access Streamtube.
 
 
 ## ☁️ GitHub Link
