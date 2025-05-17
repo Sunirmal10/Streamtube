@@ -1,30 +1,45 @@
-# YouTube Streaming App
+# 🌟 Streamtube
 
-## Description
-This project is a YouTube clone that replicates the modern UI/UX design of YouTube. It utilizes the Rapid API YouTube V3 API for fetching and displaying video data. The clone consists of multiple pages, including an individual video playback page with similar suggested videos, an individual channel page, and a search feed page. The application also includes a search feature to query for specific videos.
+## 🚀 About the Project
 
-The project makes extensive use of React hooks, such as `useContext`, `useRef`, `useState`, and `useEffect`, to manage state and handle interactions within the application. Material-UI components and icons are used to enhance the visual appeal and user experience.
+Streamtube is a modern video-streaming web app built with React and Material UI. It utilises the Rapid API YouTube V3 API for fetching and displaying video data. It consists of multiple pages, including an individual video playback page with similar suggested videos, an individual channel page, and a search feed page. The application also includes a search feature to query for specific videos.
 
-## Website
+---
 
-https://youtubeclonegen.netlify.app
+## ✨ Features
 
-## Features
-1. Modern UI/UX design inspired by YouTube
-2. Integration with Rapid API YouTube V3 API for fetching video data
-3. Multiple pages:
-   a. Individual video playback page with similar suggested videos
-   b. Individual channel page
-   c. Search feed page
-4. Search functionality to query for specific videos
-5. Efficient state management using React hooks:
-   a. `useContext`: For accessing global state across components
-   b. `useRef`: For creating references to DOM elements
-   c. `useState`: For managing component-level state
-   d. `useEffect`: For handling side effects and API requests
-6. Material-UI components and icons for enhanced visual appeal and user experience
+- 🎨 **Modern Responsive UI/UX Design**
+  - Inspired by YouTube's clean and responsive interface for an intuitive user experience.
 
-## Installation
+- 🔌 **Rapid API Integration**
+  - Uses **YouTube V3 API** via **RapidAPI** to fetch real-time video data.
+
+- 📄 **Multiple Pages**
+  - 🎥 **Video Playback Page** – Displays selected video with related/suggested videos.
+  - 👤 **Channel Page** – View videos and details from individual YouTube channels.
+  - 🔍 **Search Feed Page** – Lists search results based on user queries.
+
+- 🔎 **Search Functionality**
+  - Users can search for specific videos using keywords.
+
+- 📺 **Video Display in Search**
+  - Search results show video thumbnails, titles, and metadata in a user-friendly layout.
+
+## 🛠 Tech Stack
+
+- **Frontend:** React
+- **Styling/UI:** Material-UI
+- **Icons:** React Icons
+- **API Integration:** YouTube V3 API (via RapidAPI), Axios
+- **Deployment:** Vercel
+
+## 💻 Preview
+
+### Home Page:
+
+![streamtube](https://github.com/user-attachments/assets/53bad4d1-8e6e-4a40-a0b3-d0b6a6b13d3f)
+
+## 🔧 Installation
 1. Clone the repository:
    ```sh
    git clone <repository_url>
@@ -49,24 +64,24 @@ https://youtubeclonegen.netlify.app
     npm start
     ```
 
-2. Open your browser and visit http://localhost:3000 to access the YouTube clone.
+2. Open your browser and visit http://localhost:3000 to access Streamtube.
 
-## Technologies Used
-1. React.js: A JavaScript library for building user interfaces.
 
-2. Rapid API YouTube V3 API: Provides access to YouTube data, including videos and channels.
+## ☁️ GitHub Link
 
-3. Material-UI: React components for building stylish and responsive UI.
+[github.com/Sunirmal10/Streamtube.git](https://github.com/Sunirmal10/Streamtube.git)
 
-4. react-router-dom: Declarative routing for React applications.
+## 🔗 Website Link
 
-5. axios: Promise-based HTTP client for making API requests.
+[streamtube-six.vercel.app](https://streamtube-six.vercel.app)
 
-6. react-icons: Icon library for React components.
+## 📬 Contact
 
-## Acknowledgments
+Please reach out if you'd like to connect or learn more about me!
 
-1. This project is inspired by the design and functionality of YouTube.
+📧 Email: sunirmald1996@gmail.com
 
-2. The Rapid API YouTube V3 API is used for fetching video data.
+🌐 Portfolio: [sunirmal-das-portfolio.vercel.app](https://sunirmal-das-portfolio.vercel.app/)
+
+💼 LinkedIn:[ Sunirmal Das](https://www.linkedin.com/in/sunirmal-d-a420a4205/)
 
